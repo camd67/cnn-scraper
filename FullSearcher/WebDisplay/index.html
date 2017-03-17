@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>INFO 344 - A4</title>
+    <meta name="author" content="Cameron Doane"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="ad-l">
+        <script type="text/javascript">
+      ( function() {
+        if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
+        var unit = {"calltype":"async[2]","publisher":"Assignment4User","width":160,"height":600,"sid":"Chitika Default"};
+        var placement_id = window.CHITIKA.units.length;
+        window.CHITIKA.units.push(unit);
+        document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+    }());
+        </script>
+        <script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
+    </div>
+    <div class="ad-r">
+        <script type="text/javascript">
+      ( function() {
+        if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
+        var unit = {"calltype":"async[2]","publisher":"Assignment4User","width":160,"height":600,"sid":"Chitika Default"};
+        var placement_id = window.CHITIKA.units.length;
+        window.CHITIKA.units.push(unit);
+        document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+    }());
+        </script>
+        <script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
+    </div>
+    <div class="wrapper">
+        <h1>Search!</h1>
+        <button class="sendSearch btn btn-success">Search</button>
+        <input type="text" id="search" autocomplete="off" autofocus/>
+        <ul class="insta-results"></ul>
+        <div class="staticResults">
+            <div class="card">
+                <div class="card-header">
+                    <span class="left">
+                        <div class="larger"></div>
+                        <div class="smaller">Averages per game:</div>
+                    </span>
+                    <span class="right">
+                        <div class="gp"></div>
+                        <div class="smaller"></div>
+                    </span>
+                </div>
+                <div class="card-content">
+                    <table class="table table-hover shot-stats">
+                        <tr class="headers">
+                            <th></th>
+                            <th>Field Goals</th>
+                            <th>Free Throws</th>
+                            <th>Three Pointers</th>
+                        </tr>
+                        <tr>
+                            <th>Made</th>
+                            <td class="fgm"></td>
+                            <td class="ftm"></td>
+                            <td class="tpm"></td>
+                        </tr>
+                        <tr>
+                            <th>Attempted</th>
+                            <td class="fga"></td>
+                            <td class="fta"></td>
+                            <td class="tpa"></td>
+                        </tr>
+                        <tr>
+                            <th>Percent</th>
+                            <td class="fgp"></td>
+                            <td class="ftp"></td>
+                            <td class="tpp"></td>
+                        </tr>
+                    </table>
+                    <table class="table table-hover table-half misc-stats">
+                        <tr class="headers">
+                            <th>Passing/Ball Handling</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>Assists</th>
+                            <td class="assists"></td>
+                        </tr>
+                        <tr>
+                            <th>Turnovers</th>
+                            <td class="turnovers"></td>
+                        </tr>
+                        <tr>
+                            <th>Steals</th>
+                            <td class="steals"></td>
+                        </tr>
+                        <tr>
+                            <th>Blocks</th>
+                            <td class="blocks"></td>
+                        </tr>
+                        <tr>
+                            <th>Personal Fouls</th>
+                            <td class="pFouls"></td>
+                        </tr>
+                    </table>
+                    <table class="table table-hover table-half rebound-stats">
+                        <tr class="headers">
+                            <th>Rebounds</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th>Offensive</th>
+                            <td class="rOff"></td>
+                        </tr>
+                        <tr>
+                            <th>Defensive</th>
+                            <td class="rDef"></td>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <td class="rTot"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <ul class="results"></ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+
+    <meta name="author" content="Cameron Doane"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <link rel="stylesheet" href="admin.css" />
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="admin.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="h1 header-title">Admin Dashboard</div>
+        <div class="dashboard-button-group">
+            <button class="btn btn-danger stop-button">Stop All &amp; Clear all</button>
+            <button class="btn btn-primary crawl-cnn-button">Start CNN</button>
+            <button class="btn btn-primary crawl-br-button">Start Bleacherreport</button>
+            <button class="btn btn-success crawl-both-button">Start Both</button>
+        </div> 
+        <div class="dashboard-button-group">
+            <button class="btn btn-info resume-button">Resume Workers</button>
+            <button class="btn btn-info pause-button">Pause Workers</button>
+        </div>
+    </div>
+    <div class="dashboard-data container">
+        <!--
+        <div class="search-box">
+            <input type="text" id="pageSearch" name="pageSearch" />
+            <button class="btn btn-primary url-search">Search for url</button>
+            <span class="search-results"></span>
+        </div>
+        -->
+        <p class="h1">Worker Status:</p>
+        <table class="table dashboard-worker-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>CPU %</th>
+                    <th>Unused RAM (MB)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <p class="dashboard-section-title">Crawling Status:</p>
+        <div>
+            <span class="dashboard-section-subtitle"># URL's Crawled: </span>
+            <span class="url-count">0</span>
+        </div>
+        <div>
+            <span class="dashboard-section-subtitle">Size of Queue: </span>
+            <span class="queue-size">0</span>
+        </div>
+        <div>
+            <span class="dashboard-section-subtitle">Size of Table: </span>
+            <span class="table-size">0</span>
+        </div>
+        <div>
+            <span class="dashboard-section-subtitle">Trie stats:</span>
+            <span class="trie-size"></span>
+            <span class="last-trie"></span>
+        </div>
+        <div>
+            <p class="dashboard-section-subtitle">Last 10 URL's crawled</p>
+            <div>
+                <ol class="last-ten-url"></ol>
+            </div>
+        </div>
+        <div>
+            <p class="dashboard-section-subtitle">Errors</p>
+            <div>
+                <ul class="error-list"></ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

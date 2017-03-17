@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "FullSearcher", "FullSearcher\FullSearcher.ccproj", "{A182A31C-7F56-463A-B22E-C9AF37A134B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDisplay", "WebDisplay\WebDisplay.csproj", "{FCA69228-03BE-4567-9143-B85251EC4CD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrawlerWorker", "CrawlerWorker\CrawlerWorker.csproj", "{E33C7487-279D-4557-9727-DA5B3E840139}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCrawlerUtil", "WebCrawlerUtil\WebCrawlerUtil.csproj", "{019C5962-1B1C-4224-805B-E44CD9013573}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A182A31C-7F56-463A-B22E-C9AF37A134B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A182A31C-7F56-463A-B22E-C9AF37A134B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A182A31C-7F56-463A-B22E-C9AF37A134B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A182A31C-7F56-463A-B22E-C9AF37A134B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCA69228-03BE-4567-9143-B85251EC4CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCA69228-03BE-4567-9143-B85251EC4CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCA69228-03BE-4567-9143-B85251EC4CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCA69228-03BE-4567-9143-B85251EC4CD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E33C7487-279D-4557-9727-DA5B3E840139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E33C7487-279D-4557-9727-DA5B3E840139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E33C7487-279D-4557-9727-DA5B3E840139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E33C7487-279D-4557-9727-DA5B3E840139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{019C5962-1B1C-4224-805B-E44CD9013573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019C5962-1B1C-4224-805B-E44CD9013573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019C5962-1B1C-4224-805B-E44CD9013573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019C5962-1B1C-4224-805B-E44CD9013573}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

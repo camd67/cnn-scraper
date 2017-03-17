@@ -1,0 +1,102 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.ad-l {
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
+.ad-r {
+    position: absolute;
+    top: 0;
+    right: 100px;
+}
+
+input {
+    width: 100%;
+    margin-top: 1em;
+    font-size: 12pt;
+    box-sizing: border-box;
+}
+.sendSearch {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.insta-results {
+    width: 100%;
+    box-sizing: border-box;
+}
+.insta-results li {
+    list-style-type: none;
+    border: solid 1px #000;
+    border-top: none;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+.insta-results li:hover {
+    background-color: #999;
+}
+
+.wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.card {
+    border: 2px solid #000;
+    /*background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);
+    color: #fff;*/
+    border-radius: 5px;
+    width: 100%;
+    padding: 0.5em;
+}
+.card-content {
+    clear: both;
+}
+.card-header {
+    font-size: 16pt;
+}
+.larger {
+    font-size: 18pt;
+}
+.smaller {
+    font-size: 12pt;
+}
+.left {
+    float: left;
+    text-align: left;
+}
+.right {
+    float: right;
+    text-align: right;
+}
+.table .headers:hover {
+    background-color: #fff;
+}
+.table-half {
+    display: inline;
+}
+
+.results li {
+    border: 1px solid #000;
+    list-style-type: none;
+    padding: 0.5em;
+}
+.results li p {
+    margin-bottom: 0;
+}
+
+@media(min-width: 800px) {
+    .wrapper {
+        width: 600px;
+    }
+}

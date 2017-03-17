@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Testing jsonp</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script >
+            $(function() {
+                var query = "stephen curry";
+                $.ajax({
+                    crossDomain: true,
+                    url: "http://ec2-52-53-199-168.us-west-1.compute.amazonaws.com/api.php",
+                    contentType: "applicaton/json;charset:utf-8",
+                    dataType: "jsonp",
+                    data: {query: query},
+                    success: function(data) {
+                        console.log(data);
+                        $("#results").text(data.player.name);
+                    },
+                    error: function(data){
+                        console.log(data);
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Testing output</h1>
+        <p id="results"></p>
+    </body>
+</html>

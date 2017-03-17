@@ -1,0 +1,14 @@
+﻿
+.alert{
+    position: absolute;
+    width:100%;
+    text-align:center;
+}
+.dashboard-button-group{
+    margin-bottom: 10px;
+}
+
+.dashboard-button-group button {
+    font-variant: small-caps;
+    margin-right: 10px;
+}
