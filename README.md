@@ -13,5 +13,5 @@ The search page is the main interface that users see when interacting with the C
 ### Admin Dashboard
 The admin dashboard (which would normally be behind a secure login) provides controls for the web crawler. The main things that the dashboard does is add cnn.com/robots.txt and/or bleacherreport.com/robots.txt to the processing queue. It also allows pausing/resuming of the web crawler. It also displays statistics such as # URL's crawled, errors, and the status of each worker.
 
-## `NBA_PLAYER_SEARCHER`
+## `NBA_Player_Search`
 This folder contains the PHP code for searching for NBA players. This searches exact matches and returns back JSONP that contains the resulting NBA player. This runs on an AWS EC2 instance and interfaces with an RDS instance containing the players.
